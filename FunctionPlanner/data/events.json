@@ -347,37 +347,43 @@
     "GuestCount": 10,
     "Notes": "The need to be quiet."
   },
-  {
-    "EventId": 11,
-    "EventName": "Innovation Panel Discussion",
-    "Date": "2025-12-11",
-    "DayOfWeek": "Thursday",
-    "StartTime": "11:00",
-    "EndTime": "13:00",
-    "Room": "The Marker",
-    "SetupType": "Theatre Style",
-    "SetupNumber": 20,
-    "OrganizerName": "Laura Green",
-    "OrganizerArrival": "2025-12-11T10:30:00",
-    "GuestCount": 120,
-    "Notes": "Four panel chairs on stage, two handheld mics.",
-    "ExtraTasks": [
-      "Stage chairs and coffee table",
-      "Two handheld microphones",
-      "Water on stage",
-      "Comfort monitor if possible"
-    ],
-    "FoodAndBeverage": [
-      {
-        "Time": "11:00",
-        "Action": "Water station in foyer"
-      },
-      {
-        "Time": "12:30",
-        "Action": "Light canapés after session"
-      }
-    ]
-  },
+ {
+  "EventId": null,
+  "EventName": "PWC Christmas Party",
+  "Date": "2025-12-19",
+  "DayOfWeek": "Friday",
+  "StartTime": "17:30",
+  "EndTime": "02:00",
+  "Room": "The Marker Suite",
+  "SetupType": "Pod tables",
+  "SetupNumber": 159,
+  "OrganizerName": "Sarah Mahon",
+  "OrganizerArrival": null,
+  "GuestCount": 159,
+  "Notes": "Annual Christmas party for PWC Ireland. Includes prosecco reception, dinner, and entertainment. Event includes staff across departments attending celebration. Client wants to include house wine, beer and soft drinks during reception. Additional AV has been hired by the client.",
+  "ExtraTasks": [
+    "Provide Pod tables setup – 159 pax",
+    "Provide linen (white), napkins, glassware and cutlery",
+    "Provide wine glasses and water glasses",
+    "Provide easels and flipcharts",
+    "Provide podium",
+    "Provide stage lighting",
+    "Provide Christmas centrepieces",
+    "Reception room to be prepared from 16:00",
+    "Serve prosecco on arrival to all guests",
+    "Assist with cloakroom directions"
+  ],
+  "FoodAndBeverage": [
+    {
+      "Time": "17:30",
+      "Action": "Prosecco reception – tray passed prosecco (159 pax)"
+    },
+    {
+      "Time": "19:00",
+      "Action": "Dinner service begins – Plated Christmas Dinner Menu Package (€153 pp)"
+    }
+  ]
+},
   {
     "EventId": 12,
     "EventName": "Leadership Skills Workshop",
