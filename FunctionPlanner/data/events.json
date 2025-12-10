@@ -467,35 +467,39 @@
   },
   {
     "EventId": 16,
-    "EventName": "TikTok",
-    "Date": "2025-12-12",
-    "DayOfWeek": "Friday",
-    "StartTime": "18:00",
+    "EventName": "Batuhan Party",
+    "Date": "2025-12-13",
+    "DayOfWeek": "Saturday",
+    "StartTime": "16:00",
     "EndTime": "00:00",
-    "Room": "The Marker",
-    "SetupType": "Banquet",
-    "SetupNumber": 160,
-    "OrganizerName": "Will Garcia",
-    "OrganizerArrival": "2025-12-12T14:00:00.000Z",
-    "GuestCount": 160,
-    "Notes": "",
+    "Room": "Parnell",
+    "SetupType": "Cocktail",
+    "SetupNumber": 20,
+    "OrganizerName": "Batuhan",
+    "OrganizerArrival": "2025-12-13T14:00:00.000Z",
+    "GuestCount": 20,
+    "Notes": "Bring your own drinks",
     "ExtraTasks": [
-      "Stage",
-      "Podium",
-      "Wine Station"
+      "Ice Station",
+      "setup living room",
+      "speaker"
     ],
     "FoodAndBeverage": [
       {
-        "Time": "19:30",
-        "Action": "Starter"
+        "Time": "16:00",
+        "Action": "Drink Reception"
       },
       {
-        "Time": "20:00",
-        "Action": "Main Course"
+        "Time": "18:00",
+        "Action": "start hard alcohol"
       },
       {
-        "Time": "21:00",
-        "Action": "Dessert"
+        "Time": "23:00",
+        "Action": "Last drinks"
+      },
+      {
+        "Time": "00:00",
+        "Action": "stop the music and leaving"
       }
     ]
   }
