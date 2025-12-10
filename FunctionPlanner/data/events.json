@@ -35,42 +35,6 @@
     {
       "Time": "19:30",
       "Action": "Dinner service begins"
-    },
-    {
-      "Time": "",
-      "Action": "Starter: Winter Game and Pistachio Terrine; Clementine and pickled chicory; Warm brioche"
-    },
-    {
-      "Time": "",
-      "Action": "Starter (alt): Tuna Crudo – Blood orange, carrot, chilli, ginger, coriander, yuzu"
-    },
-    {
-      "Time": "",
-      "Action": "Main: John Stone Irish Butcher Strip Steak 8oz – Mashed potatoes, tenderstem broccoli, peppercorn sauce"
-    },
-    {
-      "Time": "",
-      "Action": "Main (alt): Roast Stone Bass – Pomme mousseline, barbecued tenderstem broccoli, sauce Bourguignon"
-    },
-    {
-      "Time": "",
-      "Action": "Dessert: Spiced Ginger Cake – Mandarin, cinnamon sablé, mandarin sorbet"
-    },
-    {
-      "Time": "",
-      "Action": "Dessert (alt): Christmas Pudding Baked Alaska – Salted caramel ice cream, briony anglaise"
-    },
-    {
-      "Time": "",
-      "Action": "Dietary requirements: Peanut & pistachio allergy; Halal request noted"
-    },
-    {
-      "Time": "",
-      "Action": "Beverages: 20 bottles House White (€39/bottle); Sparkling wine; Red wines (Tempranillo, Pinot Noir, etc.); Beer; Soft drinks"
-    },
-    {
-      "Time": "",
-      "Action": "Bar tab to be confirmed"
     }
   ]
 },
@@ -170,7 +134,7 @@
   "DayOfWeek": "Tuesday",
   "StartTime": "12:30",
   "EndTime": "16:30",
-  "Room": "Forbes Street",
+  "Room": "Forbes Street Restaurant",
   "SetupType": "Existing Restaurant Set-Up",
   "SetupNumber": 67,
   "OrganizerName": "Brian Keogh",
@@ -354,7 +318,7 @@
   "DayOfWeek": "Friday",
   "StartTime": "17:30",
   "EndTime": "02:00",
-  "Room": "The Marker Suite",
+  "Room": "The Marker",
   "SetupType": "Banquet",
   "SetupNumber": 159,
   "OrganizerName": "Sarah Mahon",
