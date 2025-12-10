@@ -502,5 +502,39 @@
         "Action": "stop the music and leaving"
       }
     ]
+  },
+  {
+    "EventId": 17,
+    "EventName": "Induction",
+    "Date": "2025-12-15",
+    "DayOfWeek": "Monday",
+    "StartTime": "09:00",
+    "EndTime": "17:30",
+    "Room": "Carnac",
+    "SetupType": "Boardroom",
+    "SetupNumber": 12,
+    "OrganizerName": "Yasmin Bergin",
+    "OrganizerArrival": "2025-12-15T08:45:00.000Z",
+    "GuestCount": 12,
+    "Notes": "Day one induction training for new starters. We have 12 employees due to attend however more are due to start work before then.",
+    "ExtraTasks": [
+      "1 Flipchart",
+      "screen",
+      "sound"
+    ],
+    "FoodAndBeverage": [
+      {
+        "Time": "09:30",
+        "Action": "Tea & Coffee with Pastries"
+      },
+      {
+        "Time": "13:30",
+        "Action": "Lunch in Forbes"
+      },
+      {
+        "Time": "13:30",
+        "Action": "Tea & Coffee refresh"
+      }
+    ]
   }
 ]
