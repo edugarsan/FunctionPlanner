@@ -41,6 +41,22 @@ async function loadEvents() {
 }
 
 /**
+ * Detectar si un evento ya ha acabado
+ */
+ function isEventPast(event) {
+    if (!event.Date || !event.EndTime) return false;
+
+    const [year, month, day] = event.Date.split("-").map(Number);
+    const [hour, minute] = event.EndTime.split(":").map(Number);
+
+    // Fecha en hora local REAL (no UTC)
+    const endDateTime = new Date(year, month - 1, day, hour, minute);
+
+    return endDateTime < new Date();
+}
+
+
+/**
  * Rellenar selects de filtro (rooms, days)
  */
 function populateFilters(events) {
@@ -151,6 +167,9 @@ function renderEvents(events) {
                 })
                 : "Date TBC";
 
+            const isPast = isEventPast(event);
+            const pastClass = isPast ? "past-event" : "";
+
             const tasksHtml =
                 Array.isArray(ExtraTasks) && ExtraTasks.length
                     ? `
@@ -183,14 +202,13 @@ function renderEvents(events) {
                     : "";
 
             return `
-      <article class="event-card">
+      <article class="event-card ${pastClass}">
         <div class="event-card__content">
           <div class="event-card__top">
             <div class="event-day-badge">
               <span>${DayOfWeek || "TBC"}</span>
               <span>•</span>
-              <span>
-            ${formattedDate}</span>
+              <span>${formattedDate}</span>
             </div>
             <div class="event-room-pill">
               <span class="event-room-pill__dot"></span>
@@ -208,45 +226,44 @@ function renderEvents(events) {
 
           <div class="event-meta">
             <div class="event-meta__item">
-            <svg class="icn" viewBox="0 0 24 24">
+              <svg class="icn" viewBox="0 0 24 24">
                 <circle cx="12" cy="12" r="9" stroke-width="1.6"/>
                 <line x1="12" y1="12" x2="12" y2="7" stroke-width="1.6"/>
                 <line x1="12" y1="12" x2="15" y2="12" stroke-width="1.6"/>
               </svg>
               <span>
-              
                 <span class="event-meta__label">Time</span><br />
                 ${StartTime || "TBC"} – ${EndTime || "TBC"}
               </span>
             </div>
-            <div class="event-meta__item">
-            <svg class="icn" viewBox="0 0 24 24">
-  <circle cx="9" cy="9" r="4" stroke-width="1.6"/>
-  <path d="M3 20c0-4 3-6 6-6s6 2 6 6" stroke-width="1.6" fill="none"/>
-</svg>
 
+            <div class="event-meta__item">
+              <svg class="icn" viewBox="0 0 24 24">
+                <circle cx="9" cy="9" r="4" stroke-width="1.6"/>
+                <path d="M3 20c0-4 3-6 6-6s6 2 6 6" stroke-width="1.6" fill="none"/>
+              </svg>
               <span>
                 <span class="event-meta__label">Guests</span><br />
                 ${GuestCount ?? "TBC"}
               </span>
             </div>
-            <div class="event-meta__item">
-            <svg class="icn" viewBox="0 0 24 24">
-  <circle cx="12" cy="8" r="4" stroke-width="1.6"/>
-  <path d="M4 20c0-5 4-7 8-7s8 2 8 7" stroke-width="1.6" fill="none"/>
-</svg>
 
+            <div class="event-meta__item">
+              <svg class="icn" viewBox="0 0 24 24">
+                <circle cx="12" cy="8" r="4" stroke-width="1.6"/>
+                <path d="M4 20c0-5 4-7 8-7s8 2 8 7" stroke-width="1.6" fill="none"/>
+              </svg>
               <span>
                 <span class="event-meta__label">Organizer</span><br />
                 ${OrganizerName}
               </span>
             </div>
-            <div class="event-meta__item">
-            <svg class="icn" viewBox="0 0 24 24">
-  <path d="M12 3a6 6 0 0 0-6 6c0 4.5 6 12 6 12s6-7.5 6-12a6 6 0 0 0-6-6z" stroke-width="1.6" fill="none"/>
-  <circle cx="12" cy="9" r="2.4" stroke-width="1.6"/>
-</svg>
 
+            <div class="event-meta__item">
+              <svg class="icn" viewBox="0 0 24 24">
+                <path d="M12 3a6 6 0 0 0-6 6c0 4.5 6 12 6 12s6-7.5 6-12a6 6 0 0 0-6-6z" stroke-width="1.6" fill="none"/>
+                <circle cx="12" cy="9" r="2.4" stroke-width="1.6"/>
+              </svg>
               <span>
                 <span class="event-meta__label">Arrival</span><br />
                 ${formattedArrival}
@@ -254,11 +271,10 @@ function renderEvents(events) {
             </div>
           </div>
 
-          ${Notes
-                    ? `<p class="event-notes"><strong>Notes:</strong> ${Notes}</p>`
-                    : ""
-                }
+          ${Notes ? `<p class="event-notes"><strong>Notes:</strong> ${Notes}</p>` : ""}
+
           ${tasksHtml}
+
           ${fnbHtml}
         </div>
       </article>
