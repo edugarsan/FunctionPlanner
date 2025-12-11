@@ -1861,4 +1861,19 @@ text-overflow: ellipsis;
       order: -1;
     }
   }
+
+@media (max-width: 500px) {
+  .events-grid,
+  .schedule-grid,
+  .timeline-grid {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 18px;
+  }
+
+  .event-card {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+}
   
