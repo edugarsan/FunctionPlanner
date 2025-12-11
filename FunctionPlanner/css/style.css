@@ -1004,4 +1004,17 @@ text-overflow: ellipsis;
     pointer-events: none;
     font-weight: 600;
   }
+
+  .event-banner-wrapper {
+    margin-bottom: 20px;
+  }
+  
+  .event-banner {
+    width: 100%;
+    border-radius: 18px;
+    box-shadow: var(--shadow-card);
+    object-fit: cover;
+    max-height: 260px;
+  }
+  
   
