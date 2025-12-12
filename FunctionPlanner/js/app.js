@@ -16,7 +16,7 @@ let allEvents = [];
 let filteredEvents = [];
 
 /**
- * Cargar eventos desde el JSON
+ * Cargar eventos desde el JSON 
  */
 async function loadEvents() {
     try {
