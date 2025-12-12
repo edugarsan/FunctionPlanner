@@ -202,7 +202,7 @@ function renderEvents(events) {
                     : "";
 
             return `
-            <article onclick="location.href='event.html?id=${event.EventId}'" class="event-card ${pastClass}">
+            <article class="event-card" data-id="${event.EventId}">
         <div class="event-card__content">
           <div class="event-card__top">
             <div class="event-day-badge">
@@ -291,6 +291,24 @@ function renderEvents(events) {
 searchInput.addEventListener("input", applyFilters);
 roomFilter.addEventListener("change", applyFilters);
 dayFilter.addEventListener("change", applyFilters);
+eventsGrid.addEventListener("click", (e) => {
+    const card = e.target.closest(".event-card");
+    if (!card) return;
+  
+    const id = card.dataset.id;
+    if (!id) {
+      console.error("❌ EventId is missing");
+      return;
+    }
+  
+    // Detecta correctamente GitHub Pages
+    const basePath = window.location.pathname.includes("/FunctionPlanner/")
+      ? "/FunctionPlanner/"
+      : "/";
+  
+    window.location.href = `${basePath}event.html?id=${encodeURIComponent(id)}`;
+  });
+  
 
 /**
  * Init
