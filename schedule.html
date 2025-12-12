@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Event Schedule</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="js/schedule.js" defer></script>
+    <style>
+        main {
+            min-width: 100%;
+            min-height: 100vh;
+        }
+
+        table{
+            height: 95vh;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="app-header">
+        <div class="app-header__inner">
+          <div class="app-header__brand">
+            <div class="app-header__logo">
+              <span class="logo-mark"> <a href="index.html" class="app-header__link">▲</a></span>
+              <span class="logo-text">
+                <span class="logo-line-1">ANANTARA</span>
+                <span class="logo-line-2">Function Planner</span>
+              </span>
+            </div>
+          </div>
+      
+          <nav class="app-header__nav">
+            <a href="schedule.html" class="app-header__link app-header__link--active">Week Schedule</a>
+            <a href="fnb.html" class="app-header__link">F&B Timeline</a>
+            <a href="index.html" class="app-header__link">Events</a>
+            <a href="add-event.html" class="app-header__link">+</a>
+          </nav>
+        </div>
+      </header>
+      
+
+    <main class="app-main">
+        <section class="summary">
+            <p id="schedule-summary">Loading schedule…</p>
+        </section>
+
+        <section class="schedule-wrapper">
+            <div class="schedule-scroll">
+                <table class="schedule-table">
+                    <thead id="schedule-head"></thead>
+                    <tbody id="schedule-body"></tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

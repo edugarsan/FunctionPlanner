@@ -1,0 +1,620 @@
+Skip to content
+Navigation Menu
+edugarsan
+FunctionPlanner
+
+Type / to search
+Code
+Issues
+Pull requests
+Actions
+Projects
+Wiki
+Security
+Insights
+Settings
+FunctionPlanner/FunctionPlanner/data
+/events.json
+Go to file
+t
+edugarsan
+edugarsan
+Update events.json
+9ea33d4
+ · 
+2 days ago
+
+Code
+
+Blame
+590 lines (590 loc) · 15.3 KB
+[
+{
+  "EventId": null,
+  "EventName": "Etihad Christmas Dinner",
+  "Date": "2025-12-16",
+  "DayOfWeek": "Tuesday",
+  "StartTime": "18:00",
+  "EndTime": "22:30",
+  "Room": "Forbes Street Restaurant",
+  "SetupType": "Existing Restaurant Set-Up",
+  "SetupNumber": 40,
+  "OrganizerName": "Jason Aaron Kearns",
+  "OrganizerArrival": null,
+  "GuestCount": 40,
+  "Notes": "Christmas dinner for Etihad Airways with delegates from the London office and their Regional General Manager. Reports suggest the past two weeks have been difficult for the team, so this dinner is intended as a celebration.",
+  "ExtraTasks": [
+    "Menus will be prepared and printed by Sales",
+    "Forbes Restaurant – Christmas Festive Menu",
+    "8 invites pending (final confirmation Friday)",
+    "22 attendees confirmed at time of printing"
+  ],
+  "FoodAndBeverage": [
+    {
+      "Time": "18:00",
+      "Action": "Guests arrive"
+    },
+    {
+      "Time": "18:30",
+      "Action": "Drinks reception"
+    },
+    {
+      "Time": "19:00",
+      "Action": "Dinner orders to be taken"
+    },
+    {
+      "Time": "19:30",
+      "Action": "Dinner service begins"
+    }
+  ]
+},
+  {
+    "EventId": 2,
+    "EventName": "HR Policies Workshop",
+    "Date": "2025-12-08",
+    "DayOfWeek": "Monday",
+    "StartTime": "10:00",
+    "EndTime": "13:00",
+    "Room": "Hibernia",
+    "SetupType": "U-Shape",
+    "SetupNumber": 15,
+    "OrganizerName": "Michael O'Connor",
+    "OrganizerArrival": "2025-12-08T09:40:00",
+    "GuestCount": 22,
+    "Notes": "Organizer needs two flipcharts and markers in different colours.",
+    "ExtraTasks": [
+      "U-shape table layout",
+      "Notepads and pens",
+      "Two flipcharts",
+      "Water bottles at each seat"
+    ],
+    "FoodAndBeverage": [
+      {
+        "Time": "10:00",
+        "Action": "Water on tables"
+      },
+      {
+        "Time": "11:15",
+        "Action": "Tea & coffee break in foyer"
+      }
+    ]
+  },
+  {
+    "EventId": 3,
+    "EventName": "Board Strategy Meeting",
+    "Date": "2025-12-08",
+    "DayOfWeek": "Monday",
+    "StartTime": "14:00",
+    "EndTime": "17:00",
+    "Room": "Carnac",
+    "SetupType": "Boardroom",
+    "SetupNumber": 10,
+    "OrganizerName": "Elena Martínez",
+    "OrganizerArrival": "2025-12-08T13:40:00",
+    "GuestCount": 12,
+    "Notes": "Still and sparkling water only. No snacks requested.",
+    "ExtraTasks": [
+      "Boardroom setup",
+      "Water jugs and glasses",
+      "HDMI connection for laptop",
+      "Name cards for all attendees"
+    ],
+    "FoodAndBeverage": [
+      {
+        "Time": "13:50",
+        "Action": "Still & sparkling water on table"
+      }
+    ]
+  },
+  {
+    "EventId": 4,
+    "EventName": "Product Roadmap Briefing",
+    "Date": "2025-12-09",
+    "DayOfWeek": "Tuesday",
+    "StartTime": "09:00",
+    "EndTime": "11:30",
+    "Room": "Shannon",
+    "SetupType": "Theatre Style",
+    "SetupNumber": 18,
+    "OrganizerName": "John Smith",
+    "OrganizerArrival": "2025-12-09T08:40:00",
+    "GuestCount": 60,
+    "Notes": "Projector with audio. Microphone check before 08:50.",
+    "ExtraTasks": [
+      "Theatre chairs layout",
+      "Podium microphone",
+      "Handheld mic for Q&A",
+      "Tech check before event"
+    ],
+    "FoodAndBeverage": [
+      {
+        "Time": "09:00",
+        "Action": "Water station at the back"
+      },
+      {
+        "Time": "10:30",
+        "Action": "Tea & coffee break in foyer"
+      }
+    ]
+  },
+  {
+  "EventId": null,
+  "EventName": "Irish Golf Writers Awards",
+  "Date": "2025-12-16",
+  "DayOfWeek": "Tuesday",
+  "StartTime": "12:30",
+  "EndTime": "16:30",
+  "Room": "Forbes Street Restaurant",
+  "SetupType": "Existing Restaurant Set-Up",
+  "SetupNumber": 67,
+  "OrganizerName": "Brian Keogh",
+  "OrganizerArrival": null,
+  "GuestCount": 67,
+  "Notes": "Annual Awards Lunch hosted by the Irish Golf Writers Association. Event includes welcome drinks, tailored Christmas lunch and awards presentation. Wine package included. Client will bring a branded pull-up, laptop and USB for AV. Media from RTE expected at 16:30 for photos.",
+  "ExtraTasks": [
+    "Provide AV setup (TV screen, playback videos)",
+    "Client to provide laptop for presentation",
+    "Reserve AV team until end of dessert",
+    "Prepare mic and speaker",
+    "Coordinate with RTE for pictures at 16:30",
+    "Client will bring branded pull-up",
+    "Client will bring laptop and USB"
+  ],
+  "FoodAndBeverage": [
+    {
+      "Time": "12:30",
+      "Action": "Welcome drinks (€15 pp) – tray-passed prosecco or bottled beer, one per person"
+    },
+    {
+      "Time": "13:15",
+      "Action": "Tailor-made Christmas Lunch menu × 67 pax at €65 pp"
+    },
+    {
+      "Time": "",
+      "Action": "Starter: Salmon pastrami, Teeling whiskey crème fraîche, pickles, chive scone"
+    },
+    {
+      "Time": "",
+      "Action": "Main course: Irish short rib beef, braised red cabbage, fondant potato, bordelaise sauce"
+    },
+    {
+      "Time": "",
+      "Action": "Dessert: Anantara Christmas Pudding Baked Alaska"
+    },
+    {
+      "Time": "",
+      "Action": "Tea & Coffee service"
+    },
+    {
+      "Time": "",
+      "Action": "Lunch drinks at €37 pp: Half bottle of wine per person (Cabernet Sauvignon, France 2022; Sauvignon Blanc, Spain 2023)"
+    },
+    {
+      "Time": "",
+      "Action": "Soft drinks and jugs of iced water on the tables"
+    },
+    {
+      "Time": "",
+      "Action": "Dietaries: Pescatarians (fish main course requested), Chef's choice fish of the day; Vegetarian silent option"
+    },
+    {
+      "Time": "",
+      "Action": "Billing: Wine package €100 pp as agreed by Elaine & Ludo. Prosecco/beer welcome drink €15 per person."
+    }
+  ]
+},
+  {
+    "EventId": 6,
+    "EventName": "LQA Training (Day 2)",
+    "Date": "2025-12-09",
+    "DayOfWeek": "Tuesday",
+    "StartTime": "14:00",
+    "EndTime": "16:00",
+    "Room": "Omer",
+    "SetupType": "Boardroom",
+    "SetupNumber": 14,
+    "OrganizerName": "Yasmin",
+    "OrganizerArrival": "2025-12-09T14:00:00",
+    "GuestCount": 12,
+    "Notes": "Organizer needs extra extension leads for laptops.",
+    "ExtraTasks": [
+      "Notepads and pens"
+    ],
+    "FoodAndBeverage": [
+      {
+        "Time": "15:00",
+        "Action": "Water on tables"
+      },
+      {
+        "Time": "16:00",
+        "Action": "Tea & coffee refresh"
+      }
+    ]
+  },
+  {
+    "EventId": 7,
+    "EventName": "JPMorgan Drinks Reception",
+    "Date": "2025-12-10",
+    "DayOfWeek": "Wednesday",
+    "StartTime": "18:00",
+    "EndTime": "21:00",
+    "Room": "The Marker",
+    "SetupType": "Drinks Reception",
+    "SetupNumber": 12,
+    "OrganizerName": "John Smith",
+    "OrganizerArrival": "2025-12-10T17:30:00",
+    "GuestCount": 85,
+    "Notes": "Organizer requested two extra mains for late guests. Birthday cake to be served close to 21:00.",
+    "ExtraTasks": [
+      "High tables",
+      "Glassware and napkins",
+      "Water station",
+      "Cake knife & dessert plates",
+      "Extra mains ready in the kitchen"
+    ],
+    "FoodAndBeverage": [
+      {
+        "Time": "18:00",
+        "Action": "Drinks service starts"
+      },
+      {
+        "Time": "19:00",
+        "Action": "Canapés round 1"
+      },
+      {
+        "Time": "20:00",
+        "Action": "Canapés round 2"
+      },
+      {
+        "Time": "20:50",
+        "Action": "Prepare birthday cake at back"
+      },
+      {
+        "Time": "21:00",
+        "Action": "Serve birthday cake"
+      }
+    ]
+  },
+  {
+    "EventId": 9,
+    "EventName": "Intapp",
+    "Date": "2025-12-10",
+    "DayOfWeek": "Wednesday",
+    "StartTime": "16:00",
+    "EndTime": "20:00",
+    "Room": "Shannon",
+    "SetupType": "Cocktail",
+    "SetupNumber": 8,
+    "OrganizerName": "Rebecca Doyle",
+    "OrganizerArrival": "2025-12-10T14:00:00",
+    "GuestCount": 42,
+    "Notes": "Internal training. No special dietary needs mentioned.",
+    "ExtraTasks": [
+      "Round tables and chairs",
+      "Projector and screen",
+      "Water jugs",
+      "Collect feedback forms at the end"
+    ],
+    "FoodAndBeverage": [
+      {
+        "Time": "16:00",
+        "Action": "Wine station"
+      },
+      {
+        "Time": "17:30",
+        "Action": "Canapes"
+      }
+    ]
+  },
+  {
+    "EventId": 9,
+    "EventName": "Intapp",
+    "Date": "2025-12-10",
+    "DayOfWeek": "Wednesday",
+    "StartTime": "16:00",
+    "EndTime": "20:00",
+    "Room": "Hibernia",
+    "SetupType": "Boardroom",
+    "SetupNumber": 8,
+    "OrganizerName": "Rebecca Doyle",
+    "OrganizerArrival": "2025-12-10T14:00:00",
+    "GuestCount": 10,
+    "Notes": "The need to be quiet."
+  },
+ {
+  "EventId": null,
+  "EventName": "PWC Christmas Party",
+  "Date": "2025-12-19",
+  "DayOfWeek": "Friday",
+  "StartTime": "17:30",
+  "EndTime": "02:00",
+  "Room": "The Marker",
+  "SetupType": "Banquet",
+  "SetupNumber": 159,
+  "OrganizerName": "Sarah Mahon",
+  "OrganizerArrival": null,
+  "GuestCount": 159,
+  "Notes": "Annual Christmas party for PWC Ireland. Includes prosecco reception, dinner, and entertainment. Event includes staff across departments attending celebration. Client wants to include house wine, beer and soft drinks during reception. Additional AV has been hired by the client.",
+  "ExtraTasks": [
+    "Provide Pod tables setup – 159 pax",
+    "Provide linen (white), napkins, glassware and cutlery",
+    "Provide wine glasses and water glasses",
+    "Provide easels and flipcharts",
+    "Provide podium",
+    "Provide stage lighting",
+    "Provide Christmas centrepieces",
+    "Reception room to be prepared from 16:00",
+    "Serve prosecco on arrival to all guests",
+    "Assist with cloakroom directions"
+  ],
+  "FoodAndBeverage": [
+    {
+      "Time": "17:30",
+      "Action": "Prosecco reception – tray passed prosecco (159 pax)"
+    },
+    {
+      "Time": "19:00",
+      "Action": "Dinner service begins – Plated Christmas Dinner Menu Package (€153 pp)"
+    }
+  ]
+},
+  {
+    "EventId": 12,
+    "EventName": "Leadership Skills Workshop",
+    "Date": "2025-12-11",
+    "DayOfWeek": "Thursday",
+    "StartTime": "14:00",
+    "EndTime": "17:30",
+    "Room": "Hibernia",
+    "SetupType": "Classroom",
+    "SetupNumber": 13,
+    "OrganizerName": "Michael O'Connor",
+    "OrganizerArrival": "2025-12-11T13:40:00",
+    "GuestCount": 24,
+    "Notes": "Requires sticky notes and markers on each table.",
+    "ExtraTasks": [
+      "Classroom layout",
+      "Sticky notes on all tables",
+      "Coloured markers",
+      "Water and glasses"
+    ],
+    "FoodAndBeverage": [
+      {
+        "Time": "14:00",
+        "Action": "Water on tables"
+      },
+      {
+        "Time": "15:45",
+        "Action": "Tea & coffee break with biscuits"
+      }
+    ]
+  },
+  {
+    "EventId": 13,
+    "EventName": "Spanish Point",
+    "Date": "2025-12-09",
+    "DayOfWeek": "Tuesday",
+    "StartTime": "13:00",
+    "EndTime": "18:00",
+    "Room": "Carnac",
+    "SetupType": "Boardroom",
+    "SetupNumber": 15,
+    "OrganizerName": "Dr. Maria Conti",
+    "OrganizerArrival": "2025-12-12T12:00:00",
+    "GuestCount": 12,
+    "Notes": "Projector must be calibrated. Client needs extra HDMI adapters.",
+    "ExtraTasks": [
+      "Boardroom table setup",
+      "Projector and screen",
+      "HDMI and VGA adapters",
+      "No flipcharts"
+    ],
+    "FoodAndBeverage": [
+      {
+        "Time": "12:00",
+        "Action": "Tea and Coffee"
+      },
+      {
+        "Time": "13:00",
+        "Action": "Soup and Sanwiches"
+      },
+      {
+        "Time": "15:30",
+        "Action": "Afternoon coffee break"
+      }
+    ]
+  },
+  {
+    "EventId": 14,
+    "EventName": "Regional Sales Summit",
+    "Date": "2025-12-12",
+    "DayOfWeek": "Friday",
+    "StartTime": "10:00",
+    "EndTime": "16:00",
+    "Room": "The Marker",
+    "SetupType": "Cabaret Style",
+    "SetupNumber": 18,
+    "OrganizerName": "Carlos Díaz",
+    "OrganizerArrival": "2025-12-12T09:30:00",
+    "GuestCount": 80,
+    "Notes": "Working lunch in the same room. Need extra cutlery for dessert.",
+    "ExtraTasks": [
+      "Cabaret setup",
+      "Working lunch buffet inside room",
+      "Dessert cutlery",
+      "Water refill after lunch"
+    ],
+    "FoodAndBeverage": [
+      {
+        "Time": "10:00",
+        "Action": "Coffee & tea on arrival foyer"
+      },
+      {
+        "Time": "11:30",
+        "Action": "Mid-morning refresh"
+      },
+      {
+        "Time": "13:00",
+        "Action": "Buffet lunch in back of room"
+      },
+      {
+        "Time": "15:30",
+        "Action": "Afternoon coffee & snacks"
+      }
+    ]
+  },
+  {
+    "EventId": 15,
+    "EventName": "Breakout Group Discussions",
+    "Date": "2025-12-12",
+    "DayOfWeek": "Friday",
+    "StartTime": "15:30",
+    "EndTime": "17:30",
+    "Room": "Carnac",
+    "SetupType": "Cluster Style",
+    "SetupNumber": 9,
+    "OrganizerName": "Rebecca Doyle",
+    "OrganizerArrival": "2025-12-12T15:10:00",
+    "GuestCount": 30,
+    "Notes": "Four clusters of tables with 7–8 chairs each.",
+    "ExtraTasks": [
+      "Clusters of tables",
+      "Flipchart in each corner",
+      "Snacks on side table",
+      "Collect flipchart pages after event"
+    ],
+    "FoodAndBeverage": [
+      {
+        "Time": "15:30",
+        "Action": "Snacks & water on side table"
+      },
+      {
+        "Time": "16:30",
+        "Action": "Refill snacks if needed"
+      }
+    ]
+  },
+  {
+    "EventId": 15,
+    "EventName": "Kids Christmas",
+    "Date": "2025-12-14",
+    "DayOfWeek": "Sunday",
+    "StartTime": "12:00",
+    "EndTime": "18:00",
+    "Room": "The Marker",
+    "SetupType": "Banquet",
+    "SetupNumber": 9,
+    "OrganizerName": "Rebecca Doyle",
+    "OrganizerArrival": "2025-12-12T11:10:00",
+    "GuestCount": 60,
+    "Notes": "Snata will come.",
+    "ExtraTasks": [
+      "Clusters of tables",
+      "Flipchart in each corner",
+      "Snacks on side table",
+      "Collect flipchart pages after event"
+    ],
+    "FoodAndBeverage": [
+      {
+        "Time": "12:30",
+        "Action": "Snacks & water on side table"
+      },
+      {
+        "Time": "15:30",
+        "Action": "Refill snacks if needed"
+      }
+    ]
+  },
+  {
+    "EventId": 16,
+    "EventName": "Batuhan Party",
+    "Date": "2025-12-13",
+    "DayOfWeek": "Saturday",
+    "StartTime": "16:00",
+    "EndTime": "00:00",
+    "Room": "Parnell",
+    "SetupType": "Cocktail",
+    "SetupNumber": 20,
+    "OrganizerName": "Batuhan",
+    "OrganizerArrival": "2025-12-13T14:00:00.000Z",
+    "GuestCount": 20,
+    "Notes": "Bring your own drinks",
+    "ExtraTasks": [
+      "Ice Station",
+      "setup living room",
+      "speaker"
+    ],
+    "FoodAndBeverage": [
+      {
+        "Time": "16:00",
+        "Action": "Drink Reception"
+      },
+      {
+        "Time": "18:00",
+        "Action": "start hard alcohol"
+      },
+      {
+        "Time": "23:00",
+        "Action": "Last drinks"
+      },
+      {
+        "Time": "00:00",
+        "Action": "stop the music and leaving"
+      }
+    ]
+  },
+  {
+    "EventId": 17,
+    "EventName": "Induction",
+    "Date": "2025-12-15",
+    "DayOfWeek": "Monday",
+    "StartTime": "09:00",
+    "EndTime": "17:30",
+    "Room": "Carnac",
+    "SetupType": "Boardroom",
+    "SetupNumber": 12,
+    "OrganizerName": "Yasmin Bergin",
+    "OrganizerArrival": "2025-12-15T08:45:00.000Z",
+    "GuestCount": 12,
+    "Notes": "Day one induction training for new starters. We have 12 employees due to attend however more are due to start work before then.",
+    "ExtraTasks": [
+      "1 Flipchart",
+      "screen",
+      "sound"
+    ],
+    "FoodAndBeverage": [
+      {
+        "Time": "09:30",
+        "Action": "Tea & Coffee with Pastries"
+      },
+      {
+        "Time": "13:30",
+        "Action": "Lunch in Forbes"
+      },
+      {
+        "Time": "13:30",
+        "Action": "Tea & Coffee refresh"
+      }
+    ]
+  }
+]

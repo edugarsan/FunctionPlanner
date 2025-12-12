@@ -29,16 +29,13 @@ function renderEvent(event) {
   const banner = generateBanner(event.Room, event.SetupType);
 
   container.innerHTML = `
-    <h1 class="page-title">${event.EventName}</h1>
-
-    <div class="event-banner-wrapper">
-      <img src="${banner}" class="event-banner" alt="banner">
-    </div>
+    
 
     <article class="event-card event-card--full">
       <div class="event-card__content">
 
         <div class="event-card__top">
+        
           <div class="event-day-badge">
             <span>${event.DayOfWeek}</span>
             <span>•</span>
@@ -46,12 +43,18 @@ function renderEvent(event) {
               day: "2-digit", month: "short", year: "numeric"
             })}</span>
           </div>
+          
 
           <div class="event-room-pill">
             <span class="event-room-pill__dot"></span>
             <span>${event.Room}</span>
           </div>
         </div>
+        <h1 class="page-title">${event.EventName}</h1>
+
+    <div class="event-banner-wrapper">
+      <img src="${banner}" class="event-banner" alt="banner">
+    </div>
 
         <div class="event-setup-chip" style="margin-top:12px;">
           <span>${event.SetupType}</span>

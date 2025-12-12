@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Event Viewer</title>
+
+  <link rel="stylesheet" href="css/style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="js/app.js" defer></script>
+</head>
+<body>
+    <header class="app-header">
+        <div class="app-header__inner">
+          <div class="app-header__brand">
+            <div class="app-header__logo">
+              <span class="logo-mark"> <a href="index.html" class="app-header__link">▲</a></span>
+              <span class="logo-text">
+                <span class="logo-line-1">ANANTARA</span>
+                <span class="logo-line-2">Function Planner</span>
+              </span>
+            </div>
+          </div>
+      
+          <nav class="app-header__nav">
+            <a href="schedule.html" class="app-header__link">Week Schedule</a>
+            <a href="fnb.html" class="app-header__link">F&B Timeline</a>
+            <a href="index.html" class="app-header__link app-header__link--active">Events</a>
+            <a href="add-event.html" class="app-header__link">+</a>
+          </nav>
+        </div>
+      </header>
+      
+
+  <main class="app-main">
+    <!-- Barra de controles -->
+    <section class="toolbar">
+      <div class="toolbar-group">
+        <label for="search-input">Buscar</label>
+        <input
+          id="search-input"
+          type="text"
+          placeholder="Buscar por nombre de evento u organizador…"
+        />
+      </div>
+
+      <div class="toolbar-group">
+        <label for="room-filter">Room</label>
+        <select id="room-filter">
+          <option value="">All rooms</option>
+        </select>
+      </div>
+
+      <div class="toolbar-group">
+        <label for="day-filter">Day</label>
+        <select id="day-filter">
+          <option value="">All days</option>
+        </select>
+      </div>
+    </section>
+
+    <!-- Resumen -->
+    <section class="summary">
+      <p id="summary-text">Loading events…</p>
+    </section>
+
+    <!-- Grid de eventos -->
+    <section id="events-grid" class="events-grid" aria-live="polite">
+      <!-- Las tarjetas se generan desde app.js -->
+    </section>
+  </main>
+</body>
+</html>
