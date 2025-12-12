@@ -202,7 +202,7 @@ function renderEvents(events) {
                     : "";
 
             return `
-            <article onclick="location.href='./event.html?id=${event.EventId}'" class="event-card ${pastClass}">
+            <article onclick="location.href='event.html?id=${event.EventId}'" class="event-card ${pastClass}">
         <div class="event-card__content">
           <div class="event-card__top">
             <div class="event-day-badge">
