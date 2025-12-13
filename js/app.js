@@ -295,18 +295,10 @@ eventsGrid.addEventListener("click", (e) => {
     const card = e.target.closest(".event-card");
     if (!card) return;
   
-    const id = card.dataset.id;
-    if (!id) {
-      console.error("❌ EventId is missing");
-      return;
-    }
+    const id = card.dataset.index;
+    if (id === undefined) return;
   
-    // Detecta correctamente GitHub Pages
-    const basePath = window.location.pathname.includes("/FunctionPlanner/")
-      ? "/FunctionPlanner/"
-      : "/";
-  
-    window.location.href = `${basePath}event.html?id=${encodeURIComponent(id)}`;
+    window.location.href = `./event.html?id=${encodeURIComponent(id)}`;
   });
   
 
