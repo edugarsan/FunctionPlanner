@@ -249,41 +249,6 @@
     ]
   },
   {
-    "EventId": 13,
-    "EventName": "Spanish Point",
-    "Date": "2025-12-09",
-    "DayOfWeek": "Tuesday",
-    "StartTime": "13:00",
-    "EndTime": "18:00",
-    "Room": "Carnac",
-    "SetupType": "Boardroom",
-    "SetupNumber": 15,
-    "OrganizerName": "Dr. Maria Conti",
-    "OrganizerArrival": "2025-12-12T12:00:00",
-    "GuestCount": 12,
-    "Notes": "Projector must be calibrated. Client needs extra HDMI adapters.",
-    "ExtraTasks": [
-      "Boardroom table setup",
-      "Projector and screen",
-      "HDMI and VGA adapters",
-      "No flipcharts"
-    ],
-    "FoodAndBeverage": [
-      {
-        "Time": "12:00",
-        "Action": "Tea and Coffee"
-      },
-      {
-        "Time": "13:00",
-        "Action": "Soup and Sanwiches"
-      },
-      {
-        "Time": "15:30",
-        "Action": "Afternoon coffee break"
-      }
-    ]
-  },
-  {
     "EventId": 14,
     "EventName": "Regional Sales Summit",
     "Date": "2025-12-12",
