@@ -1,68 +1,65 @@
 
 [
 {
-  "EventId": null,
-  "EventName": "Etihad Christmas Dinner",
+  "EventId": 1,
+  "EventName": "Discover Anantara Training",
   "Date": "2025-12-16",
   "DayOfWeek": "Tuesday",
-  "StartTime": "18:00",
-  "EndTime": "22:30",
-  "Room": "Forbes Street Restaurant",
-  "SetupType": "Existing Restaurant Set-Up",
-  "SetupNumber": 40,
-  "OrganizerName": "Jason Aaron Kearns",
+  "StartTime": "09:00",
+  "EndTime": "17:30",
+  "Room": "Carnac",
+  "SetupType": "Boardroom",
+  "SetupNumber": 12,
+  "OrganizerName": "Yasmin Bergin",
   "OrganizerArrival": null,
-  "GuestCount": 40,
-  "Notes": "Christmas dinner for Etihad Airways with delegates from the London office and their Regional General Manager. Reports suggest the past two weeks have been difficult for the team, so this dinner is intended as a celebration.",
+  "GuestCount": 12,
+  "Notes": "Day Two Anantara Brand training.",
   "ExtraTasks": [
-    "Menus will be prepared and printed by Sales",
-    "Forbes Restaurant – Christmas Festive Menu",
-    "8 invites pending (final confirmation Friday)",
-    "22 attendees confirmed at time of printing"
+    "4 Flip Charts",
+    "Screen and Sound",
+    "Yasmin will bring Laptop"
   ],
   "FoodAndBeverage": [
     {
-      "Time": "18:00",
-      "Action": "Guests arrive"
+      "Time": "09:00",
+      "Action": "Tea & Coffee & Pastreis"
     },
     {
-      "Time": "18:30",
-      "Action": "Drinks reception"
+      "Time": "13:00",
+      "Action": "Lunch in the Canteen"
     },
     {
-      "Time": "19:00",
-      "Action": "Dinner orders to be taken"
+      "Time": "13:30",
+      "Action": "Tea & Coffee"
     },
     {
-      "Time": "19:30",
-      "Action": "Dinner service begins"
+      "Time": "15:00",
+      "Action": "Afternoon Tea stands with desserts"
     }
   ]
 },
   {
     "EventId": 2,
-    "EventName": "HR Policies Workshop",
-    "Date": "2025-12-08",
-    "DayOfWeek": "Monday",
-    "StartTime": "10:00",
-    "EndTime": "13:00",
+    "EventName": "Spa Meeting",
+    "Date": "2025-12-16",
+    "DayOfWeek": "Tuesday",
+    "StartTime": "09:30",
+    "EndTime": "12:00",
     "Room": "Hibernia",
-    "SetupType": "U-Shape",
-    "SetupNumber": 15,
-    "OrganizerName": "Michael O'Connor",
-    "OrganizerArrival": "2025-12-08T09:40:00",
-    "GuestCount": 22,
-    "Notes": "Organizer needs two flipcharts and markers in different colours.",
+    "SetupType": "Boardroom",
+    "SetupNumber": 20,
+    "OrganizerName": "Orjana Krota",
+    "OrganizerArrival": null,
+    "GuestCount": 20,
+    "Notes": "Spa staff meeting.",
     "ExtraTasks": [
-      "U-shape table layout",
-      "Notepads and pens",
       "Two flipcharts",
       "Water bottles at each seat"
     ],
     "FoodAndBeverage": [
       {
-        "Time": "10:00",
-        "Action": "Water on tables"
+        "Time": "09:30",
+        "Action": "Tea & Coffee & Snacks & Pastries & Cookies"
       },
       {
         "Time": "11:15",
