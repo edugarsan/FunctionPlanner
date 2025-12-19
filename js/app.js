@@ -133,7 +133,7 @@ function renderEvents(events) {
     }
 
     const html = events
-        .map((event) => {
+        .map((event, index) => {
             // Renombramos Date -> EventDate para NO pisar el objeto global Date
             const {
                 EventName,
@@ -202,7 +202,11 @@ function renderEvents(events) {
                     : "";
 
             return `
-            <article class="event-card" data-id="${event.EventId}">
+            <article
+  class="event-card ${pastClass}"
+  
+>
+
         <div class="event-card__content">
           <div class="event-card__top">
             <div class="event-day-badge">
@@ -216,11 +220,13 @@ function renderEvents(events) {
             </div>
           </div>
 
-          <h2 class="event-title">
+          <h2 class="event-title"
+          onclick="window.location.href='./event.html?id=${index}'">
              ${EventName}
           </h2>
 
-          <div class="event-setup-chip">
+          <div class="event-setup-chip" 
+          onclick="window.location.href='./${SetupType}.html'">
             <span>${SetupType}</span>
           </div>
 
@@ -291,16 +297,7 @@ function renderEvents(events) {
 searchInput.addEventListener("input", applyFilters);
 roomFilter.addEventListener("change", applyFilters);
 dayFilter.addEventListener("change", applyFilters);
-eventsGrid.addEventListener("click", (e) => {
-    const card = e.target.closest(".event-card");
-    if (!card) return;
-  
-    const id = card.dataset.index;
-    if (id === undefined) return;
-  
-    window.location.href = `./event.html?id=${encodeURIComponent(id)}`;
-  });
-  
+
 
 /**
  * Init
