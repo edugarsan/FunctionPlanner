@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Function Planner — Room Style</title>
+
+  <link rel="icon" href="./images/favicon/favicon.ico" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <script src="./js/room-style.js" defer></script>
+</head>
+
+<body>
+
+  <!-- Header (mantiene estética de tu app) -->
+  <header class="app-header">
+    <div class="app-header__inner">
+      <div class="app-header__brand">
+        <div class="app-header__logo">
+          <span class="logo-mark">▲</span>
+          <span class="logo-text">
+            <span class="logo-line-1">ANANTARA</span>
+            <span class="logo-line-2">Function Planner</span>
+          </span>
+        </div>
+      </div>
+
+      <nav class="app-header__nav">
+        <a href="./index.html" class="app-header__link">Schedule</a>
+        <a href="./timeline.html" class="app-header__link">Timeline</a>
+        <a href="./other.html" class="app-header__link">Other</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="app-main">
+
+    <!-- Page head -->
+    <div class="rs-head">
+      <h1 class="page-title">ROOM STYLE</h1>
+      <p class="page-subtitle">
+        <span class="rs-pill">Boardroom</span>
+        <span class="rs-sub">Examples, basics and add-ons.</span>
+      </p>
+    </div>
+
+    <!-- Carousel -->
+    <section class="rs-section">
+      <h2 class="section-title">Boardroom examples</h2>
+
+      <div class="rs-carousel" data-carousel>
+        <button class="rs-carousel__btn" type="button" data-prev aria-label="Previous image">‹</button>
+
+        <div class="rs-carousel__viewport">
+          <div class="rs-carousel__track" data-track>
+            <!-- Cambia estas rutas por tus fotos reales -->
+            <img class="rs-carousel__img" src="./images/room-styles/boardroom/examples/shannon.jpg" alt="Boardroom — Shannon">
+            <img class="rs-carousel__img" src="./images/room-styles/boardroom/examples/hibernia.jpg" alt="Boardroom — Hibernia">
+            <img class="rs-carousel__img" src="./images/room-styles/boardroom/examples/carnac.jpg" alt="Boardroom — Carnac">
+            <img class="rs-carousel__img" src="./images/room-styles/boardroom/examples/omer.jpg" alt="Boardroom — Omer">
+            <img class="rs-carousel__img" src="./images/room-styles/boardroom/examples/broadstone.jpg" alt="Boardroom — Broadstone">
+          </div>
+        </div>
+
+        <button class="rs-carousel__btn" type="button" data-next aria-label="Next image">›</button>
+      </div>
+
+      <div class="rs-dots" data-dots aria-label="Carousel pagination"></div>
+    </section>
+
+    <!-- Basics -->
+    <section class="rs-section">
+      <h2 class="section-title">Boardroom basics</h2>
+
+      <article class="event-card rs-card">
+        <div class="event-card__content">
+          <p class="rs-text">
+            A standard boardroom setup includes a central conference table with chairs, clean cable access,
+            and a discreet service point. It should look symmetrical, premium and uncluttered.
+          </p>
+
+          <ul class="rs-list">
+            <li>Conference table + aligned chairs</li>
+            <li>Notepads + pencils (as per standard / request)</li>
+            <li>Water service point</li>
+            <li>Power access available on request</li>
+            <li>Signage / agenda if provided</li>
+          </ul>
+        </div>
+      </article>
+    </section>
+
+    <!-- Add-ons -->
+    <section class="rs-section">
+      <h2 class="section-title">Add-ons</h2>
+
+      <!-- Coffee station -->
+      <article class="event-card rs-addon">
+        <div class="event-card__content rs-addon__grid">
+          <div class="rs-addon__media">
+            <img src="./images/room-styles/boardroom/addons/coffee-station.jpg" alt="Coffee station">
+          </div>
+
+          <div class="rs-addon__body">
+            <h3 class="rs-addon__title">Coffee station</h3>
+            <p class="rs-text">Self-serve coffee point with all essentials, presented neatly.</p>
+
+            <ul class="rs-list">
+              <li>Filter coffee / hot water urn</li>
+              <li>Tea selection</li>
+              <li>Milk (and alternatives if required)</li>
+              <li>Sugar, sweeteners, stirrers</li>
+              <li>Cups, napkins, waste bin</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
+      <!-- Sandwich station -->
+      <article class="event-card rs-addon">
+        <div class="event-card__content rs-addon__grid">
+          <div class="rs-addon__media">
+            <img src="./images/room-styles/boardroom/addons/sandwich-station.jpg" alt="Sandwich station">
+          </div>
+
+          <div class="rs-addon__body">
+            <h3 class="rs-addon__title">Sandwich station</h3>
+            <p class="rs-text">Elegant food display for light lunches or working breaks.</p>
+
+            <ul class="rs-list">
+              <li>Sandwich / wrap selection (allergens labelled)</li>
+              <li>Small plates + napkins</li>
+              <li>Tongs / serving utensils</li>
+              <li>Chilled display if required</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
+      <!-- Water station -->
+      <article class="event-card rs-addon">
+        <div class="event-card__content rs-addon__grid">
+          <div class="rs-addon__media">
+            <img src="./images/room-styles/boardroom/addons/water-station.jpg" alt="Water station">
+          </div>
+
+          <div class="rs-addon__body">
+            <h3 class="rs-addon__title">Water station</h3>
+            <p class="rs-text">Dedicated hydration point, tidy and easy to refill.</p>
+
+            <ul class="rs-list">
+              <li>Still + sparkling water</li>
+              <li>Glassware + coasters</li>
+              <li>Optional: lemon / mint / infusion</li>
+              <li>Refill plan at peak times</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
+    </section>
+
+  </main>
+
+</body>
+</html>
