@@ -1,4 +1,49 @@
-:root{
+/* =========================
+   TIPOGRAFÍAS (GOOGLE FONTS)
+   ========================= */
+   @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Work+Sans:wght@300;400;500;600&display=swap');
+
+   /* =========
+      Variables
+      ========= */
+   :root {
+     --bg-body: #f7f3ef;            /* crema suave tipo Anantara */
+     --bg-surface: #ffffff;
+     --bg-soft: #faf6f0;
+   
+     --border-soft: #e4ded4;
+     --border-strong: #d3c9bb;
+   
+     --accent: #a88a63;             /* dorado arena */
+     --accent-soft: rgba(168, 138, 99, 0.12);
+     --accent-strong: #8a6f4f;
+   
+     --text-main: #3a3a3a;
+     --text-soft: #7a7065;
+     --text-muted: #a89d90;
+   
+     --danger: #c0392b;
+   
+     --radius-card: 18px;
+     --radius-pill: 999px;
+   
+     --shadow-card: 0 10px 30px rgba(0, 0, 0, 0.08);
+     --shadow-soft: 0 6px 20px rgba(0, 0, 0, 0.04);
+   
+     --font-title: "Cormorant Garamond", serif;
+     --font-main: "Work Sans", system-ui, -apple-system, BlinkMacSystemFont,
+       "SF Pro Text", "Segoe UI", sans-serif;
+
+       --bg:#0b0c0f;
+       --panel:#12141a;
+       --text:#f2f3f5;
+       --muted:#a7adbb;
+       --line:#262a36;
+     
+       --paper:#ffffff;
+       --ink:#111318;
+   }
+/*:root{
     --bg:#0b0c0f;
     --panel:#12141a;
     --text:#f2f3f5;
@@ -7,13 +52,13 @@
   
     --paper:#ffffff;
     --ink:#111318;
-  }
+  }*/
   
   *{ box-sizing:border-box; }
   
   body{
     margin:0;
-    font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    font-family: var(--font-main);
     background: var(--bg);
     color: var(--text);
   }
@@ -175,15 +220,23 @@
   
   .a4__content{ margin-top: 18px; }
   
-  .menu-section{ margin-top: 26px; }
+  .menu-section{ margin-top: 46px; }
   .menu-section h2{
     margin: 0 0 8px;
-    font-size: 18px;
+    font-size: 20px;
     text-transform: uppercase;
     letter-spacing: .12em;
-    border-bottom: 1px solid #fcf3db;
-    padding-bottom: 8px;
+    /*border-bottom: 1px solid var(--accent-strong);*/
+    padding-bottom: 6px;
     text-align: center;
+    color: var(--accent-strong);
+    font-family: var(--font-title);
+
+    /*color: #ffffff;
+    font-family: var(--font-title);
+    background-color: var(--accent);
+    padding: 10px;
+    border-radius: 30px 0;*/
   }
   
   .menu-list{
@@ -198,14 +251,15 @@
   }
   
   .menu-item__title{
-    font-weight: 800;
+    font-weight: 100;
     font-size: 24px;
   }
   
   .menu-item__note{
     margin-top: 4px;
     font-size: 14px;
-    color: #444a57;
+    color: var(--accent);
+    font-family: var(--font-title);
   }
   
   .placeholder{ color:#5a6273; text-align:center; margin-top: 40px; }
