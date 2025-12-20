@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Menu Builder</title>
+  <link rel="stylesheet" href="css/styles-menu.css" />
+</head>
+<body>
+  <header class="topbar">
+    <h1 class="brand">Menu Builder</h1>
+    <p class="subtitle">Select items, generate a clean A4 menu.</p>
+  </header>
+
+  <main class="layout">
+    <!-- SELECTOR -->
+    <section class="panel" aria-label="Menu selection">
+      <div class="section-head">
+        <h2>Pick your items</h2>
+        <div class="actions">
+          <button id="clearBtn" class="btn btn-ghost" type="button">Clear</button>
+          <button id="generateBtn" class="btn" type="button">Generate menu</button>
+        </div>
+      </div>
+
+      <div class="grid">
+        <div class="category">
+          <h3>Sandwiches</h3>
+          <div id="sandwichesList" class="cards"></div>
+        </div>
+
+        <div class="category">
+          <h3>Soups</h3>
+          <div id="soupsList" class="cards"></div>
+        </div>
+
+        <div class="category">
+          <h3>Desserts</h3>
+          <div id="dessertsList" class="cards"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- A4 PREVIEW -->
+    <section class="panel panel-print" aria-label="Printable menu preview">
+      <div class="section-head">
+        <h2>Printable preview</h2>
+        <button id="printBtn" class="btn btn-ghost" type="button">Print</button>
+      </div>
+
+      <div class="print-controls">
+        <label class="field">
+          <span>Menu title</span>
+          <input id="menuTitleInput" type="text" placeholder="Lunch Menu – Saturday" />
+        </label>
+
+        <label class="field">
+          <span>Subtitle</span>
+          <input id="menuMetaInput" type="text" placeholder="Conference & Events" />
+        </label>
+      </div>
+
+      <article id="a4" class="a4" aria-label="A4 menu">
+        <header class="a4__brand">
+          <img src="./images/anantara-logo.png" alt="Anantara Hotels" />
+        </header>
+
+        <header class="a4__header">
+          <h1 id="menuTitle" class="a4__title">Menu</h1>
+          <p id="menuMeta" class="a4__meta">Generated menu</p>
+        </header>
+
+        <div id="menuOutput" class="a4__content">
+          <p class="placeholder">Select items and click “Generate menu”.</p>
+        </div>
+
+        <footer class="a4__footer">
+          <p class="a4__fineprint">Please inform our team of any dietary requirements.</p>
+        </footer>
+      </article>
+    </section>
+  </main>
+
+  <script src="js/app-menu.js" defer></script>
+</body>
+</html>
