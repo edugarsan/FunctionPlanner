@@ -1,0 +1,18 @@
+{
+    "sandwiches": [
+      { "id": "sw-001", "title": "Tomato Wrap with Coronation Chicken", "allergens": ["gluten", "egg", "milk"] },
+      { "id": "sw-002", "title": "Honey glazed Limerick Ham, Dubliner Cheddar Cheese & Tomato Relish", "allergens": ["gluten", "fish", "egg", "mustard"] },
+      { "id": "sw-003", "title": "Cooleeney Camembert CHeese with Red Onion Marmalade & Rocket", "allergens": ["gluten", "milk"] },
+      { "id": "sw-004", "title": "Smoked Salmon Mousse with pickled Cucumber & Dill Crème Fraiche", "allergens": ["gluten", "sesame"] }
+    ],
+    "soups": [
+      { "id": "sp-001", "title": "Soup of the Day", "vegetarian": false, "allergens": ["celery"] },
+      { "id": "sp-002", "title": "Tomato & Basil Soup", "vegetarian": true, "allergens": ["celery"] }
+    ],
+    "desserts": [
+      { "id": "ds-001", "title": "Chocolate Brownie", "allergens": ["gluten", "egg", "milk", "soy"] },
+      { "id": "ds-002", "title": "Coconut & White Chocolate Mousse with Chocolate Crumble", "allergens": [] },
+      { "id": "ds-003", "title": "Cheesecake", "allergens": ["gluten", "egg", "milk"] }
+    ]
+  }
+  
