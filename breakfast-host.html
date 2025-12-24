@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Breakfast Checker</title>
+  <link rel="stylesheet" href="/css/styles-breakfast-host.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="brand__dot"></div>
+      <div>
+        <h1>Breakfast Checker</h1>
+        <p class="muted">Search by room, name, plan, company…</p>
+      </div>
+    </div>
+
+    <div class="searchbar">
+      <input id="q" type="search" placeholder="Search (e.g. 407)..." autocomplete="off" />
+      <button id="clearBtn" class="btn btn--ghost" type="button">Clear</button>
+    </div>
+
+    <div class="filters">
+      <select id="planFilter">
+        <option value="ALL">All plans</option>
+        <option value="BB">BB (Bed & Breakfast)</option>
+        <option value="RO">RO (Room Only)</option>
+      </select>
+
+      <select id="statusFilter">
+        <option value="ALL">All status</option>
+        <option value="NOT_CHECKED">Not checked</option>
+        <option value="CHECKED">Checked</option>
+      </select>
+
+      <button id="importToggle" class="btn" type="button">Import / JSON</button>
+    </div>
+  </header>
+
+  <main class="layout">
+    <!-- IMPORT PANEL -->
+    <section id="importPanel" class="panel panel--hidden" aria-hidden="true">
+      <h2>Import data</h2>
+      <p class="muted">
+        Paste rows from Excel/CSV/TSV. Expected columns (order flexible):
+        <strong>room, guestName, arrivalDate, departureDate, rateCode, mealPlan, company, adults, children, infants, notes</strong>
+      </p>
+
+      <div class="importGrid">
+        <div>
+          <label class="label">Paste CSV/TSV here</label>
+          <textarea id="pasteArea" placeholder="room,guestName,arrivalDate,departureDate,mealPlan,company,adults,children,infants
+407,&quot;KAMOLA, ADAN&quot;,2025-12-22,2025-12-24,BB,BOOKING.COM,2,0,0"></textarea>
+
+          <div class="row">
+            <button id="parseBtn" class="btn" type="button">Parse</button>
+            <button id="loadSampleBtn" class="btn btn--ghost" type="button">Load sample</button>
+          </div>
+        </div>
+
+        <div>
+          <label class="label">Generated JSON</label>
+          <textarea id="jsonOut" readonly placeholder="JSON will appear here..."></textarea>
+
+          <div class="row">
+            <button id="useJsonBtn" class="btn" type="button">Use this JSON in the app</button>
+            <button id="copyJsonBtn" class="btn btn--ghost" type="button">Copy</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LIST PANEL -->
+    <section class="panel">
+      <div class="panelHeader">
+        <h2>Guests</h2>
+        <div class="pillbar">
+          <span class="pill" id="countPill">0</span>
+          <span class="pill pill--ok" id="bbPill">BB: 0</span>
+          <span class="pill pill--warn" id="roPill">RO: 0</span>
+          <span class="pill pill--done" id="checkedPill">Checked: 0</span>
+        </div>
+      </div>
+
+      <div id="list" class="list" role="list"></div>
+
+      <div id="empty" class="empty panel--hidden">
+        No results. Try a different search/filter.
+      </div>
+    </section>
+  </main>
+
+  <!-- MODAL -->
+  <div id="modalBackdrop" class="backdrop panel--hidden" aria-hidden="true"></div>
+  <dialog id="modal" class="modal">
+    <form method="dialog" class="modal__inner">
+      <div class="modal__header">
+        <div>
+          <h3 id="modalTitle">Guest</h3>
+          <p id="modalSubtitle" class="muted"></p>
+        </div>
+        <button id="closeModal" class="btn btn--ghost" value="cancel" aria-label="Close">✕</button>
+      </div>
+
+      <div id="modalBody" class="modal__body"></div>
+
+      <div class="modal__footer">
+        <label class="check">
+          <input id="breakfastCheck" type="checkbox" />
+          Mark as “passed breakfast”
+        </label>
+
+        <div class="spacer"></div>
+
+        <button id="copySummary" class="btn btn--ghost" type="button">Copy summary</button>
+        <button class="btn" value="ok">Done</button>
+      </div>
+    </form>
+  </dialog>
+
+  <script src="js//app-breakfast-host.js" type="module"></script>
+</body>
+</html>
