@@ -1,0 +1,165 @@
+[
+    {
+      "id": "rl-001",
+      "zone": "Cama",
+      "title": "Levantarte sin Negociar con la Cama",
+      "short": "Levantarte a la primera alarma.",
+      "long": "La cama no es tu enemiga, pero tampoco tu aliada a estas horas. Cada minuto extra negociando con ella no te da descanso real, solo te roba energía después. Esta quest consiste en levantarte sin debate interno, como si ya hubieras tomado la decisión ayer.",
+      "type": "daily",
+      "status": "active"
+    },
+    {
+      "id": "rl-002",
+      "zone": "Salud",
+      "title": "Ir al Gimnasio Aunque No Te Apetezca",
+      "short": "Entrenar aunque no haya motivación.",
+      "long": "No todas las sesiones son épicas. Algunas son solo cumplir. Y esas, irónicamente, son las que más construyen. Esta quest no va de hacerlo perfecto, va de presentarte incluso cuando tu cabeza propone mil excusas razonables.",
+      "type": "important",
+      "status": "active"
+    },
+    {
+      "id": "rl-003",
+      "zone": "Cocina",
+      "title": "Comer Como Alguien que se Respeta",
+      "short": "Elegir comida decente, no improvisada.",
+      "long": "No se trata de dieta estricta ni de castigarte. Se trata de no sabotearte por cansancio. Esta quest es elegir algo que te cuide un poco, incluso cuando nadie está mirando.",
+      "type": "normal",
+      "status": "active"
+    },
+    {
+      "id": "rl-004",
+      "zone": "Trabajo",
+      "title": "No Hacer Más de lo que Te Pagan",
+      "short": "Poner un límite claro hoy.",
+      "long": "Eres responsable, cumplidor y resolutivo. A veces demasiado. Esta quest no va de hacerlo mal, sino de no regalar energía constantemente esperando reconocimiento automático. Trabajar bien no significa absorberlo todo.",
+      "type": "elite",
+      "status": "active"
+    },
+    {
+      "id": "rl-005",
+      "zone": "Escritorio",
+      "title": "Avanzar 20 Minutos en Tu Proyecto Personal",
+      "short": "Trabajar 20 minutos sin distracciones.",
+      "long": "No necesitas una tarde perfecta ni inspiración divina. Solo 20 minutos reales. Esta quest existe para recordarte que avanzar poco pero constante vence a esperar el momento ideal.",
+      "type": "important",
+      "status": "active"
+    },
+    {
+      "id": "rl-006",
+      "zone": "Personal",
+      "title": "No Compararte Hoy con Nadie",
+      "short": "Evitar comparaciones innecesarias.",
+      "long": "Siempre habrá alguien más avanzado, más rápido o más seguro. Compararte solo distorsiona tu propio progreso. Esta quest es observar sin medir, avanzar sin juzgar.",
+      "type": "daily",
+      "status": "active"
+    },
+    {
+      "id": "rl-007",
+      "zone": "Casa",
+      "title": "Recoger el Cuarto Antes de Que Te Supere",
+      "short": "Orden básico del espacio.",
+      "long": "Cuando el cuarto se desordena, tu cabeza suele ir detrás. No hace falta dejarlo perfecto, solo habitable. Esta quest es recuperar control sin convertirlo en una misión imposible.",
+      "type": "normal",
+      "status": "active"
+    },
+    {
+      "id": "rl-008",
+      "zone": "Trabajo",
+      "title": "Decir que No a Algo Hoy",
+      "short": "Rechazar una petición extra.",
+      "long": "Decir que no no te hace menos profesional. Te hace sostenible. Esta quest es elegir una vez tu energía antes que la comodidad ajena.",
+      "type": "elite",
+      "status": "active"
+    },
+    {
+      "id": "rl-009",
+      "zone": "Salud",
+      "title": "Dormir sin el Móvil en la Mano",
+      "short": "Dejar el móvil antes de dormir.",
+      "long": "El móvil promete descanso, pero entrega cansancio. Esta quest consiste en soltarlo a tiempo, aunque tu cerebro pida un vídeo más que nunca es solo uno.",
+      "type": "important",
+      "status": "active"
+    },
+    {
+      "id": "rl-010",
+      "zone": "Personal",
+      "title": "Aceptar que No Todo Tiene que Estar Resuelto",
+      "short": "No buscar respuestas hoy.",
+      "long": "Hay preguntas que no se resuelven pensando más. Esta quest es permitirte no cerrar todo, no decidir todo y seguir adelante igual.",
+      "type": "normal",
+      "status": "active"
+    },
+    {
+      "id": "rl-011",
+      "zone": "Trabajo",
+      "title": "Hablar Claro en Lugar de Callarte",
+      "short": "Expresar algo que llevas dentro.",
+      "long": "Callarte te protege a corto plazo, pero te desgasta a largo. Esta quest es decir algo con respeto, aunque te tiemble un poco la voz.",
+      "type": "elite",
+      "status": "active"
+    },
+    {
+      "id": "rl-012",
+      "zone": "Salud",
+      "title": "Caminar sin Objetivo ni Música",
+      "short": "Pasear sin estímulos.",
+      "long": "Caminar sin distracción parece improductivo, pero suele ordenar más que mil pensamientos. Esta quest es dejar que la cabeza se acomode sola.",
+      "type": "daily",
+      "status": "active"
+    },
+    {
+      "id": "rl-013",
+      "zone": "Personal",
+      "title": "No Exigirte un Día Perfecto",
+      "short": "Aceptar un día normal.",
+      "long": "No todos los días son transformadores. Algunos solo sostienen el proceso. Esta quest es no castigarte por eso.",
+      "type": "normal",
+      "status": "active"
+    },
+    {
+      "id": "rl-014",
+      "zone": "Escritorio",
+      "title": "Cerrar una Tarea Pendiente Pequeña",
+      "short": "Completar algo sencillo.",
+      "long": "Las tareas pequeñas abiertas ocupan más espacio mental del que merecen. Cerrarla hoy es liberar ruido innecesario.",
+      "type": "important",
+      "status": "active"
+    },
+    {
+      "id": "rl-015",
+      "zone": "Personal",
+      "title": "No Pensar en el Futuro Durante una Hora",
+      "short": "Vivir el presente conscientemente.",
+      "long": "Pensar en el futuro es útil, obsesionarse no. Esta quest es regalarte una hora sin proyecciones ni escenarios imaginarios.",
+      "type": "daily",
+      "status": "active"
+    },
+    {
+      "id": "rl-016",
+      "zone": "Trabajo",
+      "title": "Reconocer que Estás Haciendo Bastante",
+      "short": "No minimizar tu esfuerzo.",
+      "long": "Tiendes a pensar que siempre podrías hacer más. Esta quest es admitir, aunque sea incómodo, que lo que haces ya tiene valor.",
+      "type": "important",
+      "status": "active"
+    },
+    {
+      "id": "rl-017",
+      "zone": "Personal",
+      "title": "No Usar WoW como Escape Hoy",
+      "short": "Jugar solo si apetece de verdad.",
+      "long": "Jugar puede ser disfrute o anestesia. Esta quest no prohíbe jugar, solo invita a preguntarte desde dónde lo haces hoy.",
+      "type": "elite",
+      "status": "active"
+    },
+    {
+      "id": "rl-018",
+      "zone": "Personal",
+      "title": "Irte a Dormir Sabiendo que Mañana Sigues",
+      "short": "Cerrar el día sin castigarte.",
+      "long": "No todo se resuelve en un día. Esta quest es acostarte sabiendo que el proceso continúa y que eso está bien.",
+      "type": "important",
+      "status": "active"
+    }
+  ]
+  
