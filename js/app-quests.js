@@ -85,7 +85,7 @@ function renderList(){
       metaEl.className = `itemMeta ${meta.cls}`;
       metaEl.textContent = meta.text;
 
-      row.appendChild(bullet);
+      /*row.appendChild(bullet);*/
       row.appendChild(name);
       row.appendChild(metaEl);
 

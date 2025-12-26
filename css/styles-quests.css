@@ -103,9 +103,9 @@
   .btn{
     border: 2px solid rgba(255,255,255,.14);
     border-radius: 8px;
-    padding: 10px 14px;
+    padding: 5px 14px;
     background: linear-gradient(#2b2e34,#1c1e23);
-    color: var(--text);
+    color: var(--parchment1);
     cursor:pointer;
     font-weight:700;
     letter-spacing:.2px;
@@ -333,11 +333,12 @@
   .btn--red{
     background: linear-gradient(#7f1111,#3f0c0c);
     border-color: rgba(255,120,120,.25);
-    min-width: 140px;
+    min-width: 100px;
   }
   .btn--dark{
     background: linear-gradient(#2a2d33,#17191e);
     min-width: 140px;
+    color: whitesmoke;
   }
 
   .btn--green{

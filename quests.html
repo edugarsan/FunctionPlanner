@@ -41,13 +41,13 @@
 
       <!-- Panel derecha: detalle -->
       <section class="panel panel--right" aria-label="Detalle del recordatorio">
-        <div class="detailTop">
-          <div class="detailTitleRow">
-            <h2 class="detailTitle" id="detailTitle">Selecciona un recordatorio</h2>
-            <span class="detailBadge" id="detailBadge" hidden></span>
+        <div class="detailTop" hidden>
+          <div class="detailTitleRow" hidden>
+            <h2 class="detailTitle" id="detailTitlee" hidden>Selecciona un recordatorio</h2>
+            <span class="detailBadge" id="detailBadge"></span>
           </div>
 
-          <p class="detailShort" id="detailShort">
+          <p class="detailShort" id="detailShort" hidden>
             Haz click en un item de la lista para ver el detalle.
           </p>
         </div>
@@ -55,7 +55,7 @@
         <div class="parchment">
           <div class="parchment__inner">
             <div class="objective">
-              <p class="objective__label">Objective</p>
+              <p class="objective__label" id="detailTitle">Objective</p>
               <p class="objective__text" id="objectiveText">—</p>
             </div>
 
@@ -68,8 +68,8 @@
 
         <footer class="actions">
           <button class="btn btn--red" id="btnAbandon">Abandon</button>
-          <button class="btn btn--dark" id="btnShare">Share</button>
-          <button class="btn btn--green" id="btnComplete">Complete Quest</button>
+          <!--<button class="btn btn--dark" id="btnShare">Share</button>-->
+          <button class="btn btn--dark" id="btnComplete">Complete Quest</button>
           <button class="btn btn--red" id="btnExit">Exit</button>
         </footer>
       </section>
