@@ -146,8 +146,8 @@
     letter-spacing:.4px;
     padding:8px 10px;
     border-radius: 12px;
-    background: rgba(122,162,255,.18);
-    border:1px solid rgba(122,162,255,.28);
+    color:white;
+    text-align: center;
   }
   .name{
     font-weight:700;
@@ -172,6 +172,16 @@
   .badge--bb{border-color: rgba(46,229,157,.35); background: rgba(46,229,157,.12)}
   .badge--ro{border-color: rgba(255,206,92,.35); background: rgba(255,206,92,.12)}
   .badge--checked{border-color: rgba(120,215,255,.40); background: rgba(120,215,255,.12)}
+
+  .badge--note{
+    margin-left: 10px;
+    font-size: 10px;
+    color: lightgrey;
+  }
+
+  .is--bb{
+      color: #b08721;
+  }
   
   .empty{
     margin-top:12px;

@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Reminder Quest Log</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <!-- Fuentes “fantasy” + “UI” para acercarnos a la vibe -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles-quests.css" />
+</head>
+
+<body>
+  <div class="app">
+    <header class="topbar">
+      <div class="topbar__left">
+        <div class="icon-book" aria-hidden="true"></div>
+        <h1 class="topbar__title">Quest Log</h1>
+      </div>
+
+      <div class="topbar__right">
+        <span class="pill" id="countPill">Quests: 0/20</span>
+        <button class="btn btn--x" id="btnClose" title="Cerrar" aria-label="Cerrar">✕</button>
+      </div>
+    </header>
+
+    <main class="layout">
+      <!-- Panel izquierda: lista -->
+      <section class="panel panel--left" aria-label="Lista de recordatorios">
+        <div class="leftHead">
+          <button class="btnTab btnTab--active" id="tabAll">All</button>
+          <div class="track">
+            <span class="dot"></span>
+            <span>Track Quest</span>
+          </div>
+        </div>
+
+        <div class="list" id="list"></div>
+      </section>
+
+      <!-- Panel derecha: detalle -->
+      <section class="panel panel--right" aria-label="Detalle del recordatorio">
+        <div class="detailTop">
+          <div class="detailTitleRow">
+            <h2 class="detailTitle" id="detailTitle">Selecciona un recordatorio</h2>
+            <span class="detailBadge" id="detailBadge" hidden></span>
+          </div>
+
+          <p class="detailShort" id="detailShort">
+            Haz click en un item de la lista para ver el detalle.
+          </p>
+        </div>
+
+        <div class="parchment">
+          <div class="parchment__inner">
+            <div class="objective">
+              <p class="objective__label">Objective</p>
+              <p class="objective__text" id="objectiveText">—</p>
+            </div>
+
+            <hr class="rule" />
+
+            <p class="descTitle">Description</p>
+            <p class="descText" id="detailLong">—</p>
+          </div>
+        </div>
+
+        <footer class="actions">
+          <button class="btn btn--red" id="btnAbandon">Abandon</button>
+          <button class="btn btn--dark" id="btnShare">Share</button>
+          <button class="btn btn--green" id="btnComplete">Complete Quest</button>
+          <button class="btn btn--red" id="btnExit">Exit</button>
+        </footer>
+      </section>
+    </main>
+  </div>
+
+  <script src="js/app-quests.js" defer></script>
+</body>
+</html>

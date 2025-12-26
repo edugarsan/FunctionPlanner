@@ -150,18 +150,18 @@ const els = {
         item.addEventListener('click', () => openModal(g));
   
         item.innerHTML = `
-          <div class="item__left">
+          <div class="item__left ${planUp === 'BB' ? 'is--bb' : 'is--ro'}">
             <div class="room">${escapeHtml(String(g.room || '—'))}</div>
             <div style="min-width:0">
-              <div class="name">${escapeHtml(g.guestName || 'Unknown')}</div>
+              <div class="name">${escapeHtml(g.guestName || 'Unknown')}<span class="${g.notes !== '' ? 'badge--note' : 'badge--roo'}">${escapeHtml(g.notes)}</span></div>
               <div class="meta">
                 ${escapeHtml(planLabel(planUp))} · ${escapeHtml(g.company || '—')}
               </div>
             </div>
           </div>
           <div class="item__right">
-            <span class="badge ${planUp === 'BB' ? 'badge--bb' : 'badge--ro'}">${escapeHtml(planUp || '—')}</span>
-            ${isChecked ? `<span class="badge badge--checked">Breakfast ✓</span>` : ``}
+            
+            ${isChecked ? `<span class="badge badge--checked">✓</span>` : ``}
           </div>
         `;
         els.list.appendChild(item);
@@ -431,13 +431,13 @@ const els = {
   function getSample(){
     return [
         { "room":"101","guestName":"SMITH, JOHN","arrivalDate":"2025-12-21","departureDate":"2025-12-23","rateCode":"8301001","mealPlan":"BB","company":"BOOKING.COM B.V.","adults":2,"children":0,"infants":0,"notes":"" },
-        { "room":"102","guestName":"GARCIA, MARIA","arrivalDate":"2025-12-20","departureDate":"2025-12-24","rateCode":"8301002","mealPlan":"RO","company":"EXPEDIA INTERNATIONAL","adults":1,"children":0,"infants":0,"notes":"" },
+        { "room":"102","guestName":"GARCIA, MARIA","arrivalDate":"2025-12-20","departureDate":"2025-12-24","rateCode":"8301002","mealPlan":"RO","company":"EXPEDIA INTERNATIONAL","adults":1,"children":0,"infants":0,"notes":"KING" },
         { "room":"103","guestName":"O'NEILL, PATRICK","arrivalDate":"2025-12-22","departureDate":"2025-12-23","rateCode":"8301003","mealPlan":"BB","company":"DIRECT, GUEST","adults":1,"children":0,"infants":0,"notes":"VIP" },
         { "room":"104","guestName":"ROSSI, LUCA","arrivalDate":"2025-12-21","departureDate":"2025-12-25","rateCode":"8301004","mealPlan":"RO","company":"BOOKING.COM B.V.","adults":2,"children":1,"infants":0,"notes":"" },
-        { "room":"105","guestName":"MULLER, ANNA","arrivalDate":"2025-12-22","departureDate":"2025-12-24","rateCode":"8301005","mealPlan":"BB","company":"HRS","adults":1,"children":0,"infants":0,"notes":"" },
+        { "room":"105","guestName":"MULLER, ANNA","arrivalDate":"2025-12-22","departureDate":"2025-12-24","rateCode":"8301005","mealPlan":"BB","company":"HRS","adults":1,"children":0,"infants":0,"notes":"Call Aleksandra" },
       
         { "room":"106","guestName":"DUPONT, CLAIRE","arrivalDate":"2025-12-20","departureDate":"2025-12-22","rateCode":"8301006","mealPlan":"RO","company":"EXPEDIA INTERNATIONAL","adults":2,"children":0,"infants":0,"notes":"" },
-        { "room":"107","guestName":"KOWALSKI, PIOTR","arrivalDate":"2025-12-21","departureDate":"2025-12-23","rateCode":"8301007","mealPlan":"BB","company":"BOOKING.COM B.V.","adults":1,"children":0,"infants":0,"notes":"" },
+        { "room":"107","guestName":"KOWALSKI, PIOTR","arrivalDate":"2025-12-21","departureDate":"2025-12-23","rateCode":"8301007","mealPlan":"BB","company":"BOOKING.COM B.V.","adults":1,"children":0,"infants":0,"notes":"He is sick, bring hot waer with milk" },
         { "room":"108","guestName":"SANTOS, RICARDO","arrivalDate":"2025-12-22","departureDate":"2025-12-26","rateCode":"8301008","mealPlan":"RO","company":"DIRECT, GUEST","adults":2,"children":0,"infants":0,"notes":"" },
         { "room":"109","guestName":"BROWN, EMILY","arrivalDate":"2025-12-21","departureDate":"2025-12-22","rateCode":"8301009","mealPlan":"BB","company":"BOOKING.COM B.V.","adults":1,"children":0,"infants":0,"notes":"" },
         { "room":"110","guestName":"NOVAK, PETRA","arrivalDate":"2025-12-20","departureDate":"2025-12-24","rateCode":"8301010","mealPlan":"RO","company":"EXPEDIA INTERNATIONAL","adults":2,"children":1,"infants":0,"notes":"" },
